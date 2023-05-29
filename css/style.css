@@ -56,17 +56,20 @@
     background-color: #333333;
     position: relative;
     transition: background-color 0.3s ease;
+    transform-origin: center center;
   }
   
   .toggle-icon:before,
   .toggle-icon:after {
     content: "";
     position: absolute;
-    width: 25px;
-    height: 3px;
+    width: 100%;
+    height: 100%;
     background-color: #333333;
     transition: transform 0.3s ease;
+    transform-origin: center center;
   }
+  
   
   .toggle-icon:before {
     top: -8px;
