@@ -156,3 +156,25 @@ img {
 	max-width: 100%;
 	height: auto;
 }
+
+#about .about-content {
+	display: flex;
+	flex-direction: row-reverse;
+	align-items: center;
+}
+  
+#about .about-text {
+	flex: 1;
+	padding-right: 20px;
+}
+  
+#about .about-image {
+	flex: 1;
+	text-align: right;
+}
+  
+#about img {
+	max-width: 100%;
+	height: auto;
+}
+  
