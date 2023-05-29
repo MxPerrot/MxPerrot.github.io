@@ -1,180 +1,81 @@
-/* Styles pour l'en-tête */
-.navbar {
-	background-color: #ffffff;
-	padding: 20px;
-	position: fixed;
-	top: 0;
-	left: 0;
-	right: 0;
-	z-index: 999;
-	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
+
+/* Reset des marges et des rembourrages */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+  }
   
-.container {
+  /* Style du corps de la page */
+  body {
+	font-family: Arial, sans-serif;
+	background-color: #f2f2f2;
+  }
+  
+  /* Style du header */
+  header {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+  }
+  
+  .container {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-}
-
-.navbar-logo {
-	font-size: 24px;
-	font-weight: bold;
-	color: #333333;
-	text-decoration: none;
-}
-
-.navbar-menu {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-	display: flex;
-}
-
-.navbar-item {
-	margin-left: 20px;
-}
-
-.navbar-link {
-	font-size: 18px;
-	color: #333333;
-	text-decoration: none;
-}
-
-/* Styles pour le bouton de bascule mobile */
-.navbar-toggle {
-	display: none;
-	background: none;
-	border: none;
-	cursor: pointer;
-	padding: 5px;
-}
-
-.toggle-icon {
-	display: block;
-	width: 25px;
-	height: 3px;
-	background-color: #333333;
-	position: relative;
-	transition: background-color 0.3s ease;
-	transform-origin: center center;
-}
-
-.toggle-icon:before,
-.toggle-icon:after {
-	content: "";
-	position: absolute;
-	width: 100%;
-	height: 100%;
-	background-color: #333333;
-	transition: transform 0.3s ease;
-	transform-origin: center center;
-}
-
-
-.toggle-icon:before {
-	top: -8px;
-}
-
-.toggle-icon:after {
-	top: 8px;
-}
-  
-  
-/* Styles pour les médias de la barre de navigation */
-@media (max-width: 768px) {
-	.navbar-toggle {
-		display: block;
-	}
-  
-	.navbar-menu {
-		display: none;
-	}
-
-	.navbar-menu.active {
-		display: block;
-	}
-	.navbar-item {
-		margin: 10px 0;
-	}
-  
-	.navbar-toggle.active .toggle-icon {
-		background-color: transparent;
-	}
-  
-	.navbar-toggle.active:before {
-		transform: rotate(45deg);
-		top: 0;
-	}
-  
-	.navbar-toggle.active:after {
-		transform: rotate(-45deg);
-		top: 0;
-	}
-}
-  
-/* Photo de profil arrondie*/
-
-img {
-	border-radius: 50%;
   }
- 
-/* Style de la section about */
-
-#about {
-	background-color: #f2f2f2;
-	padding: 20px;
-}
   
-#about h2 {
+  .navbar-logo {
+	color: #fff;
 	font-size: 24px;
-	margin-bottom: 10px;
-}
+	text-decoration: none;
+  }
   
-#about p {
-	font-size: 16px;
-	line-height: 1.5;
-	margin-bottom: 15px;
-}
-  
-#about .about-content {
+  .navbar-menu {
+	list-style: none;
 	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-}
+  }
   
-#about .about-text {
+  .navbar-item {
+	margin-right: 10px;
+  }
+  
+  .navbar-link {
+	color: #fff;
+	text-decoration: none;
+  }
+  
+  /* Style du main */
+  main {
+	padding: 20px;
+  }
+  
+  .about-content {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+  }
+  
+  .about-text {
 	flex: 1;
 	padding-right: 20px;
-}
+  }
   
-#about .about-image {
+  .about-image {
 	flex: 1;
 	text-align: right;
-}
+  }
   
-#about img {
+  .about-image img {
 	max-width: 100%;
 	height: auto;
-}
-
-#about .about-content {
-	display: flex;
-	flex-direction: row-reverse;
-	align-items: center;
-}
+  }
   
-#about .about-text {
-	flex: 1;
-	padding-right: 20px;
-}
-  
-#about .about-image {
-	flex: 1;
-	text-align: right;
-}
-  
-#about img {
-	max-width: 100%;
-	height: auto;
-}
+  /* Style du footer */
+  footer {
+	background-color: #333;
+	color: #fff;
+	padding: 20px;
+	text-align: center;
+  }
   
