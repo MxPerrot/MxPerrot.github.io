@@ -99,6 +99,7 @@ svg {
 .project-technos {
 	bottom: 0;
 	padding-left: 0;
+	line-height: 3em;
 }
 
 .project-techno {
@@ -170,8 +171,6 @@ a:active {
 	color: #111;
 }
 
-
-
 .bottom {
 	position: fixed;
 	bottom: 0;
@@ -215,18 +214,19 @@ a:active {
 	width: 50px;
 }
 
-.contact a:link {
+#contact a:link {
 	text-decoration: none;
 }
 
-.contact a:visited {
+#contact a:visited {
 	text-decoration: none;
 }
 
-.contact a:hover {
+#contact a:hover {
 	text-decoration: none;
+	transform: scale(1.5);
 }
 
-.contact a:active {
+#contact a:active {
 	text-decoration: none;
 }
