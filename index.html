@@ -1,67 +1,249 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="no-scroll-bar">
     <head>
-        <!--Commentaire-->
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Mon Portfolio</title>
+        <title>Portfolio Max</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="icon" type="image/png" href="img/logo.jpg">
-        <script src="js/script.js"></script>
+        
     </head>
     <body>
-        <header>
-            <nav class="navbar">
-                <div class="container">
-                    <a class="navbar-logo" href="#">Mon Portfolio</a>
-                    <button class="navbar-toggle" id="navbar-toggle">
-                        <span class="toggle-icon"></span>
-                    </button>
-                    <ul class="navbar-menu" id="navbar-menu">
-                        <li class="navbar-item"><a class="navbar-link" href="#about">À propos</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#projects">Projets</a></li>
-                        <li class="navbar-item"><a class="navbar-link" href="#contact">Contact</a></li>
-                    </ul>
-                </div>
+        <div id="particle-canvas"></div>
+        <script type="text/javascript" src="js/particle-network.min.js"></script>
+        <script type="text/javascript">
+            var canvasDiv = document.getElementById('particle-canvas');
+            var options = {
+                particleColor: '#888',
+                background: '#1a252f',
+                interactive: false,
+                speed: 'fast',
+                density: 'medium'
+            };
+            var particleCanvas = new ParticleNetwork(canvasDiv, options);
+        </script>
+
+        <!-- HEADER -->
+        <header class="sidenav">
+            <nav class="top">
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#projects">Projects</a>
             </nav>
+            <address class="bottom">
+                <!-- CONTACT -->
+                <div id="contact">
+                    <span id="contact-keybase">
+                        <a href="https://keybase.io/maxperrot" target="_blank">
+                            <img src="img/keybase.png" alt="Keybase" class="contact-image">
+                        </a>
+                    </span>
+                    <span id="contact-telegram">
+                        <a href="https://t.me/max_telegrm" target="_blank">
+                            <img src="img/telegram.png" alt="Telegram" class="contact-image">
+                        </a>
+                    </span>
+                    <span id="contact-mail">
+                        <a href="mailto:max_protn@proton.me">
+                            <img src="img/mail.png" alt="Email" class="contact-image">
+                        </a>
+                    </span>
+                    <span id="contact-github">
+                        <a href="https://github.com/MxPerrot" target="_blank">
+                            <img src="img/github.png" alt="GitHub" class="contact-image">
+                        </a>
+            <address/>
+            <p>© 2023 - All rights reserved</p>
         </header>
 
+        <!-- MAIN -->
         <main>
+            <!-- ABOUT -->
             <section id="about">
-                <h2>À propos</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam hendrerit lectus vel lacinia posuere. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Sed quis mauris metus. Sed quis risus a lectus pulvinar aliquet.</p>
-                        <p>Integer commodo orci non varius rutrum. Vestibulum ullamcorper lorem id pharetra rhoncus. Nam nec ante et arcu consectetur ullamcorper. Vestibulum feugiat nisi in tellus ultricies consectetur. Mauris sed fringilla sem. Nullam efficitur tincidunt est ut bibendum.</p>
-                    </div>
-                    <div class="about-image">
-                        <img src="img/logo.jpg" alt="Logo">
-                    </div>
-                </div>
-            </section>
-              
-
-            <section id="projects">
-                <!-- Ajoute la section de tes projets ici -->
-                <article id="projet1">
-                    <h2>Projet 1</h2>
-                    <p>Amet nisi enim minim tempor minim nulla in dolor voluptate occaecat. Ipsum nostrud non tempor ea nulla elit. Labore minim Lorem non excepteur magna ut. Incididunt amet dolore voluptate nulla reprehenderit velit tempor Lorem tempor Lorem cupidatat laborum sit. Laborum nulla quis do duis irure occaecat in incididunt exercitation aute consectetur ad. Cupidatat nostrud incididunt dolore quis nostrud amet labore aute laborum irure amet.</p>
+                <p>Hi! My name is <div id="name">Max</div></p>
+                <br>
+                <article>
+                    <p>
+                        I develop things on my free time, I like to learn new things and to discover new technologies.
+                        I made this website to show you my projects and my skills.
+                        <br>
+                        <br>
+                        I started programming when I was 11, I learned <strong>Python</strong> to help my elder brother with his homework and loved it.
+                        I made a few simple games and programs with it.
+                        When I entered middle school, I choose the computer science option and learned <strong>HTML</strong> and <strong>CSS</strong></a>.
+                        I'm currently studying computer science in the <a href="https://iut-lannion.univ-rennes.fr/" target="_blank">IUT of Lannion</a>
+                        <br>
+                        <br>
+                        I try to learn new things every day, I'm currently learning <strong>C</strong> and <strong>Java</strong>.
+                    </p>
                 </article>
             </section>
-            
-            
 
-            <section id="contact">
-                <h2>Me contacter</h2>
-                <form>
-                    <label for="fname">Nom</label>
-                    <input> 
-                </form>
+            <section id="experience">
+                <h2>My experience</h2>
+                <div class="experience">
+                    <div class="experience-formation">
+                        <h3>2023 - 2025 - B.U.T. Informatique</h3>
+                        <p>TODO</p>
+                    </div>
+                    <div class="experience-formation">
+                        <h3>2022 - Baccalaureate</h3>
+                        <p>General baccalaureate, Physics-Chemistry and Computer Science options</p>
+                    </div>
+                </div>
+                
+            </section>
+
+            <!-- PROJECTS -->
+            <section id="projects">
+                <h2>My projects</h2>
+                
+                <h3>School projects</h3>
+                <div class="wrapper">
+                    <div class="p1 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/Connect4" target="_blank">SAE 1.01 : Command line Connect4</a>
+                        <p class="project-description">
+                            This project is a 2 players Connect4 game, playable in the command line.
+                        </p>
+                        <img class="project-img" src="img/project1.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">C</li>
+                        </ul>
+                        
+                    </div>
+
+                    <div class="p2 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE102-puissance4" target="_blank">SAE 1.02 : Connect4 Bot & Evaluation program</a>
+                        <p class="project-description">
+                            A bot to play Connect4 with, using a custom algorithm and an evaluation program to determine the best bot among the class.
+                        </p>
+                        <img class="project-img" src="img/project2.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">C</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="p3 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE102-puissance4" target="_blank">SAE 1.03 : Automating complex processes</a>
+                        <p class="project-description">
+                            A pdf generator using docker and bash and php scripts for a company to sort its employes by efficiency according to region.
+                            <br><br><em>More info coming soon...</em>
+                        </p>
+                        <img class="project-img" src="img/project3.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Docker</li>
+                            <li class="project-techno">Bash</li>
+                            <li class="project-techno">PHP</li>
+                            <li class="project-techno">HTML</li>
+                            <li class="project-techno">CSS</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="p4 project">
+                        <a class="project-title">SAE 1.04 : Database creation</a>
+                        <p class="project-description">
+                            Creation of a Trans Musicales festival database
+                        </p>
+                        <img class="project-img" src="img/project4.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">SQL</li>
+                            <li class="project-techno">Visual Paradigm</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="p5 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE105-frontend_website" target="_blank">SAE 1.05 : Static website</a>
+                        <p class="project-description">
+                            Sport Koh is a static website for a fictionnal travel agency focused on sport activities.
+                        </p>
+                        <img class="project-img" src="img/project5.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">HTML</li>
+                            <li class="project-techno">CSS</li>
+                            <li class="project-techno">Javascript</li>
+                        </ul>
+                    </div>
+
+
+                    <div class="p6 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE105-frontend_website" target="_blank">SAE 1.06 : TotalEnergies CSR analysis</a>
+                        <p class="project-description">
+                            Analysis of TotalEnergies' CSR and its impact on the environment.
+                        </p>
+                        <img class="project-img" src="img/project6.png" alt="">
+                    </div>
+
+                    <div class="p7 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/PalfrenierPlanner" target="_blank">SAE 2.01 : PalfrenierPlanner</a>
+                        <p class="project-description">
+                            A part of a bigger project, this is a simple Java app that allows you to create, edit and delete a room for a hotel management software.
+                        </p>
+                        <br><br><em>More info coming soon...</em>
+                        <img class="project-img" src="img/project7.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Java</li>
+                        </ul>
+                    </div>
+
+                    <div class="p8 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE202" target="_blank">SAE 2.02 : The N queens problem</a>
+                        <p class="project-description">
+                            The n queens problem in Python. The goal is to place n queens of a chess set on a board of n × n squares without the queens being able to threaten each other.
+                        </p>
+                        <img class="project-img" src="img/project8.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Python</li>
+                        </ul>
+                        <a class="project-link" href="" target="_blank">See on GitHub</a>
+                    </div>
+
+                    <div class="p9 project">
+                        <a class="project-title" href="https://github.com/MxPerrot/SAE202" target="_blank">SAE 2.03 : Hosting a dynamic website</a>
+                        <p class="project-description">
+                            Setting up a dynamic website with login management hosted on an Apache server and communicating with a MySQL database on an Ubuntu virtual machine
+                        </p>
+                        <img class="project-img" src="img/project9.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Python</li>
+                        </ul>
+                        <a class="project-link" href="" target="_blank">See on GitHub</a>
+                    </div>
+
+                    <div class="p10 project">
+                        <p class="project-title">Project title</p>
+                        <p class="project-description">
+                            Culpa commodo excepteur deserunt dolore ullamco elit cupidatat cupidatat veniam adipisicing commodo. Amet sunt id in proident irure deserunt. Eiusmod amet ad veniam ad incididunt id in.
+                        </p>
+                        <img class="project-img" src="img/project1.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Java</li>
+                            <li class="project-techno">C</li>
+                        </ul>
+                        <a class="project-link" href="" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="p11 project">
+                        <p class="project-title">Project title</p>
+                        <p class="project-description">
+                            Culpa commodo excepteur deserunt dolore ullamco elit cupidatat cupidatat veniam adipisicing commodo. Amet sunt id in proident irure deserunt. Eiusmod amet ad veniam ad incididunt id in.
+                        </p>
+                        <img class="project-img" src="img/project1.png" alt="">
+                        <ul class="project-technos">
+                            <li class="project-techno">Java</li>
+                            <li class="project-techno">C</li>
+                        </ul>
+                        <a class="project-link" href="" target="_blank">See on GitHub</a>
+                    </div>
+                    <div class="p12 project">
+                        
+                    </div>
+                </div>
+                <div>
+                    <h3>Personal projects</h3>
+                </div>
             </section>
         </main>
-
-        <footer>
-        </footer>
 
     </body>
 </html>
