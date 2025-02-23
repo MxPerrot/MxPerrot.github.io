@@ -24,3 +24,12 @@ Une rubrique "Mes Compétences" contenant des cartes avec un titre style "Systè
 
 Une rubrique "Contact" Contenant une liste de boutons vers des réseaux sociaux style linkedin, github...
 
+# Run
+
+1. Install docker
+
+2. Run 
+
+```bash
+docker-compose up --build
+```

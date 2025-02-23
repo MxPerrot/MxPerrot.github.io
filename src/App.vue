@@ -1,12 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
 import Navbar from './components/Navbar.vue'
-import ThemeController from './components/ThemeController.vue';
 </script>
 
 <template>
 <Navbar/>
-<ThemeController/>
 </template>
 
 <style scoped>

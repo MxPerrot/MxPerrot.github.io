@@ -1,3 +1,36 @@
+
+<script>
+import ThemeController from './ThemeController.vue';
+
+import { ref } from 'vue';
+
+export default {
+    components: {
+        ThemeController, // Register here
+    },
+    setup() {
+        const isOpen = ref(false);
+        const links = ref([
+            { name: 'Parcours', href: '#parcours' },
+            { name: 'Projets', href: '#projets' },
+            { name: 'Compétences', href: '#competences' },
+            { name: 'Contact', href: '#contact' }
+        ]);
+
+        return {
+            isOpen,
+            links
+        };
+    }
+};
+</script>
+
+<style scoped>
+/* Scoped styles if needed */
+</style>
+
+
+
 <template>
         <nav class="fixed top-0 left-0 right-0 bg-white shadow dark:bg-gray-800">
             <div class="container px-6 py-4 mx-auto md:flex md:justify-between md:items-center">
@@ -31,34 +64,11 @@
                             class="my-2 text-gray-700 transition-colors duration-300 transform dark:text-gray-200 hover:text-blue-500 dark:hover:text-blue-400 md:mx-4 md:my-0"
                             :href="link.href">{{ link.name }}</a>
                     </div>
+
+                    <!-- Theme Toggle Button -->
+                    <ThemeController />
+
                 </div>
             </div>
         </nav>
     </template>
-
-    <script>
-    import { ref } from 'vue';
-    
-    export default {
-        setup() {
-            const isOpen = ref(false);
-            const links = ref([
-                { name: 'Parcours', href: '#parcours' },
-                { name: 'Projets', href: '#projets' },
-                { name: 'Compétences', href: '#competences' },
-                { name: 'Contact', href: '#contact' }
-            ]);
-    
-            return {
-                isOpen,
-                links
-            };
-        }
-    };
-    </script>
-    
-    <style scoped>
-    /* Scoped styles if needed */
-    </style>
-    
-    

@@ -43,7 +43,7 @@ onMounted(() => {
     <!-- moon icon -->
     <svg
       v-else
-      class="swap-on h-10 w-10 fill-current text-gray-800"
+      class="swap-on h-10 w-10 fill-current text-gray-200"
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24">
       <path
