@@ -1,0 +1,12 @@
+services:
+  vue-app:
+    container_name: vue-tailwind
+    build: .
+    ports:
+      - "5173:5173"
+    volumes:
+      - .:/app  # Mount the local directory inside the container
+      - /app/node_modules  # Prevents overwriting of node_modules
+    stdin_open: true
+    tty: true
+    command: ["npm", "run", "dev", "--", "--host"]
