@@ -1,22 +1,14 @@
+<!-- App.vue -->
 <script setup>
-import Navbar from './components/Navbar.vue'
+import Navbar from './components/Navbar.vue';
+import Timeline from './components/Timeline.vue';
+import Section from './components/Section.vue';
+import { t } from './i18n';
 </script>
 
 <template>
-<Navbar/>
+  <Navbar />
+  <Section :title="t('section_journey')">
+    <Timeline />
+  </Section>
 </template>
-
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
-}
-</style>
