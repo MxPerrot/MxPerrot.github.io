@@ -82,3 +82,24 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+/* Default Light Mode */
+:root {
+  color: #213547;
+  background-color: #ffffff;
+}
+
+/* Dark Mode (When the 'dark' class is added to <html>) */
+html.dark {
+  color: #f3f4f6; /* Tailwind text-gray-100 */
+  background-color: #111827; /* Tailwind bg-gray-900 */
+}
+
+/* Optional: Adjust links and buttons for dark mode */
+html.dark a:hover {
+  color: #a5b4fc; /* Light blue hover effect */
+}
+
+html.dark button {
+  background-color: #1f2937; /* Dark gray button */
+}
