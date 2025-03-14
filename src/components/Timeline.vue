@@ -56,7 +56,7 @@ export default {
                     <time class="font-caveat font-medium text-indigo-500">{{ event.date }}</time>
                 </div>
                 <div v-if="event.place != ''" class="flex items-center justify-left space-x-2 mb-1">
-                    <img src="../assets/geo-alt-fill.svg">
+                    <img src="/assets/geo-alt-fill.svg">
                     <time class="font-caveat font-medium text-gray-500">{{ event.place }}</time>
                 </div>
                 <div class="text-slate-500">{{ event.text }}</div>
